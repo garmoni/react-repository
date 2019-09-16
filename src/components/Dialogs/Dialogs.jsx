@@ -1,21 +1,8 @@
 import React from 'react';
-import s from './Dialogs.module.css'
-import {NavLink} from "react-router-dom";
-
-const DialogItem = (props) => {
-    let path = "/dialogs/" + props.id;
-    return (
-        <li className={s.active}>
-            <img src={"http://themekit.frontendmatter.com/dist/themes/admin/images/people/110/" + props.image}/>
-            <NavLink to={path}>{props.name}</NavLink>
-        </li>);
-}
-
-const Message = (props) => {
-    return (
-        <li>{props.message}</li>
-    );
-}
+import s from './Dialogs.module.css';
+import DialogsItem from "./DialogItem/DialogsItem";
+import Message from "./Message/Message";
+import {BrowserRouter, Route} from "react-router-dom";
 
 const Dialogs = (props) => {
     let dialogsData = [
@@ -35,7 +22,7 @@ const Dialogs = (props) => {
     ]
 
     let dialogsElement = dialogsData
-        .map( dialog => <DialogItem name={dialog.name} id={dialog.id} image={dialog.image} /> );
+        .map( dialog => <DialogsItem name={dialog.name} id={dialog.id} image={dialog.image} /> );
     let maessagesElement = messages.map (m => <Message message={m.message}/>);
 
     return (

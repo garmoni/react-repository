@@ -1,0 +1,37 @@
+.wrapper, .name li {
+    display: flex;
+}
+.name {
+    width: 35%;
+    height: 100vh;
+    background: #fff;
+}
+.name li {
+    border-bottom: 1px solid #f5f5f5;
+    padding: 10px 20px;
+    align-items: center;
+}
+.name a {
+    color: #303030;
+}
+.name img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.name, .messages {
+    padding: 20px 0;
+    font-size: 14px;
+}
+.messages {
+    width: 65%;
+}
+.messages li {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.active {
+    color: goldenrod;
+}
