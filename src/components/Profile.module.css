@@ -1,0 +1,13 @@
+.content {
+    width: 75%;
+}
+.content-image {
+    width: 100%;
+    height: 200px;
+}
+.ava-img img{
+    width: 100px;
+}
+.post-wrapper, .ava-img {
+    padding: 15px;
+}
