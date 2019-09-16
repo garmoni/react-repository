@@ -1,0 +1,29 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+.noWrapper {
+  background: #3498db;
+}
+.navContent {
+  display: flex;
+  background: #ecf0f1;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.postWrapper {
+  width: 100%;
+  height:100%;
+  background: #ecf0f1;
+}
+li{
+  list-style-type: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}

@@ -1,9 +1,21 @@
 .postWrapper {
     padding: 15px;
 }
-.items {
-    color: red;
+.formPost textarea{
+    display: block;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+    margin: 20px 0;
 }
-.items img {
-    width: 120px;
+.formPost button {
+    border: 1px solid #6e7882;
+    padding: 10px 25px;
+    color: #ffffff;
+    background-color: #6e7882;
+    cursor: pointer;
+}
+.formPost button:hover {
+    background: #243542;
 }

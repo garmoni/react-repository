@@ -1,19 +1,25 @@
 import React from 'react';
-import  classesMp from './MyPosts.module.css';
+import  s from './MyPosts.module.css';
+import Post from "./Post/Post";
+
 const MyPosts = () => {
-    return <div className={classesMp.postWrapper}>
-            My posts
-            <div>
-                New post
+    let myPostData = [
+        {id: 1, message: "Hi, how are you?", likenum: 15},
+        {id: 2, message: "It's my first post", likenum: 10},
+        {id: 3, message: "It's my first post", likenum: 10},
+        {id: 4, message: "It's my first post", likenum: 10}
+    ]
+
+    let postsElement = myPostData.map (p => <Post message={p.message} likenum={p.likenum} />);
+
+    return <div className={s.postWrapper}>
+        <h3>My posts</h3>
+            <div className={s.formPost}>
+               <textarea></textarea>
+                <button>New post</button>
             </div>
-            <div className={classesMp.posts}>
-                <div className={classesMp.items}>
-                    <img src="https://hornews.com/images/news_large/c1d4b2b8ec608ea72764c5678816d5c9.jpg" />
-                    Post 1
-                </div>
-                <div className={classesMp.items}>
-                    Post 2
-                </div>
+            <div className={s.posts}>
+                {postsElement}
             </div>
         </div>
 }

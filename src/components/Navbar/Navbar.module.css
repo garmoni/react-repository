@@ -1,0 +1,20 @@
+.nav {
+    background: #354c5f;
+    width: 20%;
+    height: 100vh;
+    padding-top: 20px;
+}
+.nav li {
+    padding: 15px;
+    border-bottom: 1px solid #b0c4d4;
+    cursor: pointer;
+}
+.nav li:hover {
+    background: #243542;
+}
+.nav li a {
+    color: #b0c4d4;
+}
+.nav li a.linkActive {
+    color: #fff;
+}
