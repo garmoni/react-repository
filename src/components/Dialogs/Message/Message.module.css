@@ -7,6 +7,9 @@
 .itemList:nth-child(2n) {
     flex-direction: row-reverse;
 }
+.itemList:nth-child(2n) .messages{
+    background-color: #25bce9;
+}
 .itemList img {
     border-radius: 50%;
 }

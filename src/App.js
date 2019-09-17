@@ -13,10 +13,10 @@ const App = (props) => {
   return (
   	<BrowserRouter>
 		  <div className={classesApp.noWrapper}>
-			<Header />
+			<Header/>
 		  </div>
 			<div className={`${classesApp.navContent} ${classesApp.wrapper}`}>
-				<Navbar />
+				<Navbar  state={props.appState.sideBar}/>
 				<div className={classesApp.postWrapper}>
 					<Route path='/profile'
 						   render={ () => <Profile

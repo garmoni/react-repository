@@ -24,7 +24,12 @@ let state = {
         ]
     },
     sideBar: {
-
+        barFriend:
+            [
+                {id: 1, namefriends: 'Dmitry', imagefriends: 'guy-6.jpg'},
+                {id: 2, namefriends: 'Mary', imagefriends: 'woman-5.jpg'},
+                {id: 3, namefriends: 'John', imagefriends: 'guy-4.jpg'}
+            ]
     }
 }
 
