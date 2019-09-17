@@ -8,8 +8,8 @@ const Dialogs = (props) => {
 
 
     let dialogsElement =
-        props.dialogsData.map( dialog => <DialogsItem name={dialog.name} id={dialog.id} image={dialog.image} /> );
-    let maessagesElement = props.messages.map (m => <Message message={m.message}/>);
+        props.state.dialogsData.map( dialog => <DialogsItem name={dialog.name} id={dialog.id} image={dialog.image} /> );
+    let maessagesElement = props.state.messages.map (m => <Message message={m.message} avamessage={m.avamessage}/>);
 
     return (
         <div className={s.wrapper}>

@@ -6,7 +6,7 @@ const MyPosts = (props) => {
 
 
     let postsElement =
-        props.myPostData.map (p => <Post message={p.message} likenum={p.likenum} />);
+        props.myPostData.map(p => <Post message={p.message} likenum={p.likenum} />);
 
     return (
         <div className={s.postWrapper}>

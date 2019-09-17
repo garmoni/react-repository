@@ -19,18 +19,14 @@
     border-radius: 50%;
     margin-right: 20px;
 }
-.name, .messages {
-    padding: 20px 0;
-    font-size: 14px;
-}
+.name {
+     padding: 20px 0;
+     font-size: 14px;
+ }
 .messages {
     width: 65%;
-}
-.messages li {
-    background: #fff;
     padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
+    font-size: 14px;
 }
 .active {
     color: goldenrod;
