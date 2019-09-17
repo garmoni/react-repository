@@ -6,11 +6,11 @@ import Profile from "./components/Profile/Profile";
 import Dialogs from "./components/Dialogs/Dialogs";
 import News from "./components/News/News"
 import Music from "./components/Music/Music"
-import classesMp from "./components/Profile/MyPosts/MyPosts.module.css";
 import {BrowserRouter, Route} from "react-router-dom";
 
 
 const App = (props) => {
+
   return (
   	<BrowserRouter>
 		  <div className={classesApp.noWrapper}>
@@ -19,8 +19,8 @@ const App = (props) => {
 			<div className={`${classesApp.navContent} ${classesApp.wrapper}`}>
 				<Navbar />
 				<div class={classesApp.postWrapper}>
-					<Route path='/profile' render={ () => <Profile/>} />
-					<Route path='/dialogs' render={ () => <Dialogs/>} />
+					<Route path='/profile' render={ () => <Profile myPostData={props.myPostData} />} />
+					<Route path='/dialogs' render={ () => <Dialogs  dialogsData={props.dialogsData} messages={props.messages} />} />
 					<Route path='/news' render={ () => <News/>} />
 					<Route path='/music' render={ () => <Music />} />
 				</div>
