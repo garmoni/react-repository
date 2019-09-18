@@ -11,7 +11,7 @@ import {BrowserRouter, Route} from "react-router-dom";
 const App = (props) => {
 
   return (
-  	<BrowserRouter>
+		<div>
 		  <div className={classesApp.noWrapper}>
 			<Header/>
 		  </div>
@@ -28,7 +28,7 @@ const App = (props) => {
 					<Route path='/music' render={ () => <Music />} />
 				</div>
 			</div>
-	</BrowserRouter>
+		</div>
   );
 }
 
