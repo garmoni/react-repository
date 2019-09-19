@@ -1,4 +1,5 @@
 import React from 'react';
+import classesApp from './../../../App.module.css';
 import  s from './MyPosts.module.css';
 import Post from "./Post/Post";
 
@@ -11,16 +12,17 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
+        debugger;
         let text = newPostElement.current.value;
-        alert(text);
+        props.addPost(text);
     }
 
     return (
-        <div className={s.postWrapper}>
+        <div>
         <h3>My posts</h3>
             <div className={s.formPost}>
                <textarea ref={newPostElement}></textarea>
-                <button onClick={ addPost }> New post</button>
+               <button onClick={ addPost }> New post</button>
             </div>
             <div className={s.posts}>
                 {postsElement}

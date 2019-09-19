@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Dialogs.module.css';
 import DialogsItem from "./DialogItem/DialogsItem";
 import Message from "./Message/Message";
-import {BrowserRouter, Route} from "react-router-dom";
+import NewMessage from "./NewMessage/NewMessage";
 
 const Dialogs = (props) => {
 
@@ -16,9 +16,12 @@ const Dialogs = (props) => {
             <ul className={s.name}>
                 {dialogsElement}
             </ul>
-            <ul className={s.messages}>
-                {maessagesElement}
-            </ul>
+            <div>
+                <ul className={s.messages}>
+                    {maessagesElement}
+                </ul>
+                <NewMessage />
+            </div>
         </div>
     );
 }

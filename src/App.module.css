@@ -27,3 +27,24 @@ ul {
 a {
   text-decoration: none;
 }
+ textarea{
+  display: block;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+  width: 300px;
+  height: 100px;
+  margin: 20px 0;
+}
+ button {
+  border: 1px solid #6e7882;
+  padding: 10px 25px;
+  color: #ffffff;
+  background-color: #6e7882;
+  cursor: pointer;
+}
+ button:hover {
+  background: #243542;
+}
+.postWrapper {
+  padding: 15px 25px;
+}
