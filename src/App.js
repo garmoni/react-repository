@@ -21,11 +21,14 @@ const App = (props) => {
 				<div className={classesApp.postWrapper}>
 					<Route path='/profile'
 						   render={ () => <Profile
-							   state={props.appState.profilePage}
-							   addPost={props.addPost} /> }/>
+							   profilePage={props.appState.profilePage}
+							   addPost={props.addPost}
+							   updateNewPostText={props.updateNewPostText}
+						   /> }/>
 					<Route path='/dialogs'
 						   render={ () => <Dialogs
-							   state={props.appState.dialogsPage} />} />
+							   state={props.appState.dialogsPage}
+						   />} />
 					<Route path='/news' render={ () => <News/>} />
 					<Route path='/music' render={ () => <Music />} />
 				</div>
