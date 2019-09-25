@@ -9,7 +9,6 @@ import Music from "./components/Music/Music"
 import {BrowserRouter, Route} from "react-router-dom";
 
 const App = (props) => {
-
   return (
 		<div>
 		  <div className={classesApp.noWrapper}>
@@ -20,10 +19,15 @@ const App = (props) => {
 				<div className={classesApp.postWrapper}>
 					<Route path='/profile'
 						   render={ () => <Profile
-							   state={props.appState.profilePage} />} />
+							   profilePage={props.appState.profilePage}
+							   addPost={props.addPost}
+							   updateNewPostText={props.updateNewPostText}
+						   />} />
 					<Route path='/dialogs'
 						   render={ () => <Dialogs
-							   state={props.appState.dialogsPage} />} />
+							   dialogsPage={props.appState.dialogsPage}
+							   addMessage={props.addMessage}
+						   />} />
 					<Route path='/news' render={ () => <News/>} />
 					<Route path='/music' render={ () => <Music />} />
 				</div>
