@@ -6,17 +6,22 @@ const NewMessage = (props) => {
 
     let newMessageElement = React.createRef();
 
-    let addPost = () => {
+    let addMessage = () => {
         let text = newMessageElement.current.value;
-        alert(text);
+        props.addMessage(text);
+        newMessageElement.current.value='';
+    }
+    let onMessageChange = () => {
+
     }
 
     return (
-        <div className={classesApp.postWrapper}>
+        <div className={s.postWrapper}>
             <h3>New message</h3>
             <div className={s.formMessage}>
-               <textarea ref={newMessageElement}></textarea>
-                <button onClick={ addPost }>Add message</button>
+               <textarea onChange={onMessageChange} ref={newMessageElement}
+                         value={props.newMessageText}/>
+                <button onClick={addMessage} >Add message</button>
             </div>
         </div>);
 }
