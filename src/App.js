@@ -19,7 +19,7 @@ const App = (props) => {
 				<div className={classesApp.postWrapper}>
 					<Route path='/profile'
 						   render={ () => <Profile
-							   profilePage={props.appState.profilePage}
+					n		   profilePage={props.appState.profilePage}
 							   addPost={props.addPost}
 							   updateNewPostText={props.updateNewPostText}
 						   />} />

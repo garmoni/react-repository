@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import state from './redux/state';
+import state, {addPost, updateNewPostText} from './redux/state';
 import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(<BrowserRouter>
-                    <App appState={state}/>
+                    <App appState={state} updateNewPostText={updateNewPostText} addPost={addPost}/>
                 </BrowserRouter>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
